@@ -212,8 +212,7 @@ header a {
   /* padding-bottom: 15%; */
   padding-top: 35%;
   margin-bottom: 40px;
-  margin-top: 2px;
-  box-shadow: 0 0 10px #333;
+  margin-top: 3px;
 }
 
 .videoContainer video {
