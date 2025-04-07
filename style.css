@@ -210,9 +210,13 @@ header a {
   background-attachment: fixed;
   overflow: hidden;
   /* padding-bottom: 9%; */
-  padding-top: 35.50%;
+  padding-top: 33%;
   margin-bottom: 40px;
+<<<<<<< HEAD
   /* margin-top: 3px; */
+=======
+/*   margin-top: 3px; */
+>>>>>>> 511eec8e0443ecf03560b3c21fa7b618b89d568d
 }
 
 .videoContainer video {
@@ -460,6 +464,6 @@ footer p {
       
   }
   .videoContainer {
-      padding-top: 45%;
+      padding-top: 35%;
   }
 }
