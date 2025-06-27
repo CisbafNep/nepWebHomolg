@@ -3,9 +3,9 @@
 //gráfico de barras//
 
 const ctx = document.getElementById('alunosChart').getContext('2d');
- let labels = ['Téc de Enfermagem l (2020)', 'Cuidador em Saúde Mental (2020)', 'ACS | Agentes Comunitários de Saúde(2020)', 'TARM (2021)', 'Base SAMU 192 (2021) - Módulo I', 'Base SAMU 192 (2021) - Módulo II', 'Base SAMU 192 (2021) - Módulo III', 'Téc de Enfermagem ll (2021)', 'Téc de Enfermagem lll (2022)', 'Urgências e Emergências Médicas I (2022)', 'HGNI | Acolhimento e Classificação de Risco (2022)', 'Consórcios Públicos (2022)', 'Capacitação para Enfermagem l (2023)', 'Urgências e Emergências Médicas II (2023)', 'TARM (2023)', 'Atualização da Prática Clinica da Enfermagem (2023)', 'Cuidador em Saúde Mental (2024)', 'TARM (2024)', 'Curso APH(2024)', 'Eletrocardiografia Básico (2024)', 'Curso Infecto(2024)', 'Curso Primeiros Socorros - Lei Lucas(2025)'];
-let inscritos = [112, 182, 734, 54, 528, 528, 528, 613, 409, 305, 96, 219, 391, 232, 54, 634, 383, 19, 1231, 313, 563, 1340 ];
- let certificados = [54, 54, 469, 50, 294, 377, 417, 234, 287, 221, 32, 125, 237, 133, 50, 306, 283, 18, 815, 92, 348, 878 ];
+ let labels = ['Téc de Enfermagem l (2020)', 'Cuidador em Saúde Mental (2020)', 'ACS | Agentes Comunitários de Saúde(2020)', 'TARM (2021)', 'Base SAMU 192 (2021) - Módulo I', 'Base SAMU 192 (2021) - Módulo II', 'Base SAMU 192 (2021) - Módulo III', 'Téc de Enfermagem ll (2021)', 'Téc de Enfermagem lll (2022)', 'Urgências e Emergências Médicas I (2022)', 'HGNI | Acolhimento e Classificação de Risco (2022)', 'Consórcios Públicos (2022)', 'Capacitação para Enfermagem l (2023)', 'Urgências e Emergências Médicas II (2023)', 'TARM (2023)', 'Atualização da Prática Clinica da Enfermagem (2023)', 'Cuidador em Saúde Mental (2024)', 'TARM (2024)', 'Curso APH(2024)', 'Eletrocardiografia Básico (2024)', 'Curso Infecto(2024)', 'Curso Primeiros Socorros - Lei Lucas(2025)', 'Curso APH(2025)', 'AGORA TEM ESPECIALISTAS -  ONCOLOGIA', 'AGORA TEM ESPECIALISTAS -  CARDIOLOGIA'];
+let inscritos = [112, 182, 734, 54, 528, 528, 528, 613, 409, 305, 96, 219, 391, 232, 54, 634, 383, 19, 1231, 313, 563, 1340, 1355, 69, 91 ];
+ let certificados = [54, 54, 469, 50, 294, 377, 417, 234, 287, 221, 32, 125, 237, 133, 50, 306, 283, 18, 815, 92, 348, 878, 840, 17, 15 ];
         
 const alunosChart = new Chart(ctx, {
  type: 'bar',
@@ -69,9 +69,9 @@ plugins: [ChartDataLabels] // Ativa o plugin
  }
  // Criar contadores com diferentes configurações
  createCounter('counter1', 1, 1, 20, 172);
- createCounter('counter2', 1000, 50, 5600, 50);
+ createCounter('counter2', 1000, 50, 6500, 50);
  createCounter('counter3', 1, 1, 20, 172);
- createCounter('counter4', 1000, 100, 7800, 70);
+ createCounter('counter4', 1000, 100, 8400, 70);
 
 
 
@@ -79,7 +79,7 @@ plugins: [ChartDataLabels] // Ativa o plugin
 var data = [
     ['br-sp', 23], ['br-mg', 20], ['br-rj', 6400], ['br-ba', 6], ['br-go', 2],
     ['br-ce', 4], ['br-df', 2], ['br-es', 3], ['br-ms', 3],, ['br-al', 5],['br-pi', 1],
-    ['br-pa', 3], ['br-pb', 2],['br-pe', 4], ['br-pr', 7], ['br-rn', 5],
+    ['br-pa', 3], ['br-pb', 2],['br-pe', 4], ['br-pr', 7], ['br-rn', 5],['br-am', 2],
     ['br-ro', 2], ['br-rs', 3], ['br-se', 2], ['br-to', 1], ['br-ap', 1],['br-sc', 1],
     ['br-vazio', 250] // Para estados com valores vazios, se necessário
 ];

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #333;
+    }
+    #mainPic {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .imgCarros {
+      width: 100px;
+      height: 100px;
+      transition: 0.3s;
+    }
+    .imgCarros:hover {
+      width: 110px;
+      height: 110px;
+      border: 2px solid white;
+      margin: 3px;
+    }
+    img {
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section class="wrapper">
+    <!-- Link da imagem principal -->
+    <a id="mainLink" href="#" target="_blank">
+      <img id="mainPic" src="/logo_aph.png" alt="Imagem Principal" />
+    </a>
+
+    <div class="imgWrapper">
+      <!-- Cada miniatura tem data-link associado -->
+      <img class="imgCarros" src="/logo_curso_tarm_2.png" data-link="https://plataforma.cisbaf.org.br/course/view.php?id=33" alt="Curso TARM" />
+      <img class="imgCarros" src="/logo_fundEnf.png" data-link="https://plataforma.cisbaf.org.br/course/view.php?id=37" alt="Fund Enf" />
+      <img class="imgCarros" src="/Logo_MedReg.png" data-link="https://plataforma.cisbaf.org.br/course/view.php?id=25" alt="Med Reg" />
+      <img class="imgCarros" src="/logo_pmae_cardio.png" data-link="https://plataforma.cisbaf.org.br/course/view.php?id=39" alt="Cardio" />
+      <img class="imgCarros" src="/logo_pmae_oncol.png" data-link="https://plataforma.cisbaf.org.br/course/view.php?id=40" alt="Oncol" />
+    </div>
+  </section>
+
+  <script>
+    const images = Array.from(document.getElementsByClassName('imgCarros'));
+    const mainPic = document.getElementById('mainPic');
+    const mainLink = document.getElementById('mainLink');
+
+    function updateImage(event) {
+      const image = event.target;
+      mainPic.src = image.src;
+      mainLink.href = image.dataset.link;
+    }
+
+    images.forEach((image) => {
+      image.addEventListener('click', updateImage);
+    });
+  </script>
+</body>
+</html>

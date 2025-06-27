@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Power BI Dashboard</title>
+  <link rel="icon" type="image/x-icon" href="./assets/midia/favicon_cisbaf.png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      flex: 1;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    aside {
+      width: 200px;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      overflow-y: auto;
+      height: 100vh;
+    }
+
+    aside::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    aside::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    aside::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    .logo {
+      cursor: pointer;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid #444;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .logo:hover {
+      background-color: #333;
+    }
+
+    .logo img {
+      max-width: 60px;
+      height: auto;
+    }
+
+    .logo p {
+      font-size: small;
+    }
+
+    .logobtnx,
+    .year-button {
+      width: 100%;
+      cursor: pointer;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      background: none;
+      color: rgb(16, 236, 16);
+      font-weight: bold;
+    }
+
+    .dashboard-group {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .dashboard-group.active {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+
+  <aside>
+
+    <img src="./assets/midia/BANNER_SITE_NOVA_LOGO.png" onmouseover="this.style.transform='scale(1.2)'"
+      onmouseout="this.style.transform='scale(1)'" style="transform: scale(1); transition: transform 0.3s;">
+    </a>
+
+    <div><a href="./about.html"><button class="logobtnx">Menu Sobre o Nep</button></a></div>
+    <div><a href="dashRelBi.html"><button class="logobtnx">Relatórios dos cursos</button></a></div><br><br>
+
+    <!-- Botões por ano -->
+    <button class="year-button" onclick="toggleYear('dash2025')">Dashboards 2025 <span><img
+          src="https://i0.wp.com/www.convz.ae/wp-content/uploads/2023/05/powerbi-logo.webp?fit=1500%2C1500&ssl=1"
+          style="width: 19px;" alt=""></span></button>
+    <div id="dash2025" class="dashboard-group">
+    
+      <div class="logo"
+        onclick="loadDashboard('https://app.powerbi.com/view?r=eyJrIjoiNDAxMDVmNmYtYTUwOC00MzU1LTk2ZTgtYjZiNDg1NzMxYmIzIiwidCI6ImU3NjcxOWI5LTA2NjQtNDZkOC04YzVmLWFhMTJlNTcyOTkwMyJ9')">
+        <img src="https://plataforma.cisbaf.org.br/pluginfile.php/11030/mod_page/content/47/LOGO%20CARDIOLOGIA.png"
+          alt="OCI Cardio">
+        <p>OCIs Cardiologia</p>
+      </div>
+      <div class="logo"
+        onclick="loadDashboard('https://app.powerbi.com/view?r=eyJrIjoiMDZmYzVkOGUtODIxYS00MWIzLWExMWItODY3OTBhMjcwNzc5IiwidCI6ImU3NjcxOWI5LTA2NjQtNDZkOC04YzVmLWFhMTJlNTcyOTkwMyJ9')">
+        <img src="https://plataforma.cisbaf.org.br/pluginfile.php/11028/mod_page/content/46/LOGO%20ONCOLOGIA.png"
+          alt="OCI Onco">
+        <p>OCIs Oncologia</p>
+      </div>
+
+      <div class="logo"
+        onclick="loadDashboard('https://app.powerbi.com/view?r=eyJrIjoiMGU3Y2Q1YjMtNGFlNi00ZTc2LTlmMDUtYThjYzNiMmY0MmM5IiwidCI6ImU3NjcxOWI5LTA2NjQtNDZkOC04YzVmLWFhMTJlNTcyOTkwMyJ9')">
+        <img src="https://cursosonline.nep.cisbaf.org.br/assets/midia/logo_aph.png" alt="aph 2025">
+        <p>Curso APH (2025)</p>
+      </div>
+      <div class="logo"
+        onclick="loadDashboard('https://app.powerbi.com/view?r=eyJrIjoiNTdlYjYwMDUtMDE5NC00MTkyLTgxNzgtMmZiNjg3ODliYWQ2IiwidCI6ImU3NjcxOWI5LTA2NjQtNDZkOC04YzVmLWFhMTJlNTcyOTkwMyJ9')">
+        <img
+          src="https://plataforma.cisbaf.org.br/pluginfile.php/8820/mod_page/content/10/logo%20curso%20primeiros%20socorros.png"
+          alt="Lei Lucas 2025">
+        <p>Curso Primeiros Socorros com Ênfase na Lei Lucas</p>
+      </div>
+    </div>
+
+    <button class="year-button" onclick="toggleYear('dash2024')">Dashboards 2024 <span><img
+          src="https://i0.wp.com/www.convz.ae/wp-content/uploads/2023/05/powerbi-logo.webp?fit=1500%2C1500&ssl=1"
+          style="width: 19px;" alt=""></span></button>
+    <div id="dash2024" class="dashboard-group">
+      <div class="logo"
+        onclick="loadDashboard('https://app.powerbi.com/view?r=eyJrIjoiYmFmOGRiNDctZWRkNy00MTg4LTg5NjMtNGNmOTM3YjQ3Y2E1IiwidCI6ImU3NjcxOWI5LTA2NjQtNDZkOC04YzVmLWFhMTJlNTcyOTkwMyJ9')">
+        <img src="https://plataforma.cisbaf.org.br/pluginfile.php/7430/mod_page/content/25/cardEletro.jpg"
+          alt="Eletro 2024">
+        <p>Curso Eletrocardiografia básico</p>
+      </div>
+      <div class="logo"
+        onclick="loadDashboard('https://app.powerbi.com/view?r=eyJrIjoiOWFmODVkYWEtMThhYS00NjVlLTg4OTQtZTZhMGE5ZjRlMzJiIiwidCI6ImU3NjcxOWI5LTA2NjQtNDZkOC04YzVmLWFhMTJlNTcyOTkwMyJ9')">
+        <img src="https://plataforma.cisbaf.org.br/pluginfile.php/8252/mod_page/content/29/logoInfecto.jpg"
+          alt="infecto 2024">
+        <p>Curso doenças Infecto contagiosas</p>
+      </div>
+    </div>
+
+  </aside>
+
+  <main id="mainContent">
+    <p>Clique em uma opção no menu à esquerda para abrir o dashboard
+      <span><img src="https://i0.wp.com/www.convz.ae/wp-content/uploads/2023/05/powerbi-logo.webp?fit=1500%2C1500&ssl=1"
+          style="width: 30px;" alt=""></span>
+    </p>
+  </main>
+
+  <script>
+    function loadDashboard(url) {
+      const main = document.getElementById('mainContent');
+      main.innerHTML = `<iframe src="${url}" allowfullscreen></iframe>`;
+    }
+
+    function toggleYear(yearId) {
+      const element = document.getElementById(yearId);
+      element.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,92 +13,116 @@
     <script src="https://code.highcharts.com/mapdata/countries/br/br-all.js"></script>
     <title>CISBAF - NEP</title>
 </head>
+
 <body>
-     <header>
-       <a href="index.html">
-        <img class="logo" src="BANNER_SITE_NOVA_LOGO.png" 
-             onmouseover="this.style.transform='scale(1.2)'" 
-             onmouseout="this.style.transform='scale(1)'" 
-             style="transform: scale(1); transition: transform 0.3s;">
+    <header>
+        <a href="index.html">
+            <img class="logo" src="BANNER_SITE_NOVA_LOGO.png" onmouseover="this.style.transform='scale(1.2)'"
+                onmouseout="this.style.transform='scale(1)'" style="transform: scale(1); transition: transform 0.3s;">
         </a>
         <div id="mainhead">
-           <a href="index.html">Página Inicial</a>
-                <a href="/about.html">Sobre o NEP</a>
-                <a href="index.html#container">Catálogo de Cursos</a>
+            <a href="index.html">Página Inicial</a>
+            <a href="/about.html">Sobre o NEP</a>
+            <a href="index.html#container">Catálogo de Cursos</a>
             <a href="https://plataforma.cisbaf.org.br/mod/page/view.php?id=566">Perguntas Frequentes</a>
-                <a href="timeline.html">História do NEP</a>
-               <a href="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0" target="_blank">Fale conosco</a>
-            <a href="https://plataforma.cisbaf.org.br/my/" ><button class="btnAcess">Entrar</button></a>
+            <a href="timeline.html">História do NEP</a>
+            <a href="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0"
+                target="_blank">Fale conosco</a>
+            <a href="https://plataforma.cisbaf.org.br/my/"><button class="btnAcess">Entrar</button></a>
         </div>
-    
+
         <!-- Ícone do menu hamburguer -->
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </header>
-    
+
     <!-- Menu lateral -->
     <div class="side-menu" id="sideMenu">
         <button class="close-btn" onclick="toggleMenu()">✖</button>
-            <a href="index.html"><img class="logo" src="BANNER_SITE_NOVA_LOGO.png" style="width: 200px;"></a>
-            <a href="index.html">Página Inicial</a>
-           <a href="/about.html">Sobre o NEP</a>
-            <a href="index.html#container">Catálogo de Cursos</a>
+        <a href="index.html"><img class="logo" src="BANNER_SITE_NOVA_LOGO.png" style="width: 200px;"></a>
+        <a href="index.html">Página Inicial</a>
+        <a href="/about.html">Sobre o NEP</a>
+        <a href="index.html#container">Catálogo de Cursos</a>
         <a href="https://plataforma.cisbaf.org.br/mod/page/view.php?id=566">Perguntas Frequentes</a>
-                <a href="timeline.html">História do NEP</a>
-            <a href="https://api.whatsapp.com/send/?phone=5521968843062" target="_blank">Fale conosco</a>
-        <a href="https://plataforma.cisbaf.org.br/my/" ><button class="btnAcess">Entrar</button></a>
+        <a href="timeline.html">História do NEP</a>
+        <a href="https://api.whatsapp.com/send/?phone=5521968843062" target="_blank">Fale conosco</a>
+        <a href="https://plataforma.cisbaf.org.br/my/"><button class="btnAcess">Entrar</button></a>
     </div>
-     <div id="overlay" class="overlay"></div>
+    <div id="overlay" class="overlay"></div>
 
 
     <div>
-        <div class="corpo_nep">           
+        <div class="corpo_nep">
             <h1 style="text-align: center;">Seja bem vindo(a) ao NEP</h1>
-            
+
             <h4><span style="font-weight: normal;"><br></span></h4>
             <div class="column" style="column-gap: 30px; columns: 2 200px">
-                <h4 style="text-align: justify;"><span style="font-weight: normal;">Com o objetivo de levar informações da maneira mais rápida possível às áreas remotas de difícil e demorado acesso, além de deficitários níveis disponíveis de informação, em novembro</span> <span style="font-weight: normal;">de 2011, através da portaria 2546/GM/MS, a Região da Baixada Fluminense aderiu ao Projeto Regional de Telessaúde, com objetivo de fortalecer e melhorar a qualidade do atendimento da atenção básica no Sistema Único de Saúde (SUS), integrando ensino e serviço por meio de ferramentas e tecnologias da informação e da comunicação e capacitando os profissionais que ali atuavam.</span></h4>
-            
-                <h4 style="text-align: justify;"><span style="font-weight: normal;">Em 2020, a necessidade de se adaptar às novas dinâmicas de convivência, novas iniciativas foram necessárias para se manter o contato com o aprendizado, mesmo que à distância, e a manutenção dos constantes treinamentos, principalmente para os profissionais da linha de frente do COVID 19. Neste contexto, o Cisbaf começa a desenvolver treinamentos online, em formato de cursos, com aulas elaboradas visando atualizar e especializar seus alunos.</span></h4>
-                <h4 style="text-align: justify;"><span style="font-weight: normal;">Hoje a Plataforma NEP CISBAF está consolidada e com oferta de cursos cujos temas são de diversos contextos e onde o aluno pode assistir em qualquer lugar e em qualquer tempo através do aplicativo disponível nas lojas on line, sendo as aulas na forma de pílulas de conhecimento com duração curta, linguagem de fácil compreensão e conteúdos autossufientes, aplicável ao cotidiano do profissional.</span></h4>
-                <h4 style="text-align: justify;"><span style="font-weight: normal;">Alguns cursos poderão ser acompanhados de forma assíncrona pelos tutores e outros autoinstrucionais, não possuindo tutoria. Esta informação estará na página do curso.</span></h4>
-                <h4 style="text-align: justify;"><span style="font-weight: normal;">Nesta nova versão, o aluno tem acesso a um cadastro e login únicos para a realização de suas capacitações, bem como um&nbsp;histórico de cursos unificado onde os certificados dos cursos realizados e concluídos podem ser consultados e emitidos em qualquer tempo.</span></span></h4><br><br>
+                <h4 style="text-align: justify;"><span style="font-weight: normal;">Com o objetivo de levar informações
+                        da maneira mais rápida possível às áreas remotas de difícil e demorado acesso, além de
+                        deficitários níveis disponíveis de informação, em novembro</span> <span
+                        style="font-weight: normal;">de 2011, através da portaria 2546/GM/MS, a Região da Baixada
+                        Fluminense aderiu ao Projeto Regional de Telessaúde, com objetivo de fortalecer e melhorar a
+                        qualidade do atendimento da atenção básica no Sistema Único de Saúde (SUS), integrando ensino e
+                        serviço por meio de ferramentas e tecnologias da informação e da comunicação e capacitando os
+                        profissionais que ali atuavam.</span></h4>
+
+                <h4 style="text-align: justify;"><span style="font-weight: normal;">Em 2020, a necessidade de se adaptar
+                        às novas dinâmicas de convivência, novas iniciativas foram necessárias para se manter o contato
+                        com o aprendizado, mesmo que à distância, e a manutenção dos constantes treinamentos,
+                        principalmente para os profissionais da linha de frente do COVID 19. Neste contexto, o Cisbaf
+                        começa a desenvolver treinamentos online, em formato de cursos, com aulas elaboradas visando
+                        atualizar e especializar seus alunos.</span></h4>
+                <h4 style="text-align: justify;"><span style="font-weight: normal;">Hoje a Plataforma NEP CISBAF está
+                        consolidada e com oferta de cursos cujos temas são de diversos contextos e onde o aluno pode
+                        assistir em qualquer lugar e em qualquer tempo através do aplicativo disponível nas lojas on
+                        line, sendo as aulas na forma de pílulas de conhecimento com duração curta, linguagem de fácil
+                        compreensão e conteúdos autossufientes, aplicável ao cotidiano do profissional.</span></h4>
+                <h4 style="text-align: justify;"><span style="font-weight: normal;">Alguns cursos poderão ser
+                        acompanhados de forma assíncrona pelos tutores e outros autoinstrucionais, não possuindo
+                        tutoria. Esta informação estará na página do curso.</span></h4>
+                <h4 style="text-align: justify;"><span style="font-weight: normal;">Nesta nova versão, o aluno tem
+                        acesso a um cadastro e login únicos para a realização de suas capacitações, bem como
+                        um&nbsp;histórico de cursos unificado onde os certificados dos cursos realizados e concluídos
+                        podem ser consultados e emitidos em qualquer tempo.</span></span></h4><br><br>
                 <p></p>
-            <!-- </div><img class="midinep" src="/img/img_cursos/midianep.png" alt=""> -->
+                <!-- </div><img class="midinep" src="/img/img_cursos/midianep.png" alt=""> -->
+            </div>
+
         </div>
-        
-    </div>
-    <main>
-        <h1 style="text-align: center;"><span style="color: brown;">NOSSOS</span> <span style="color: darkgoldenrod;">NÚMEROS</span></h1><br><br><br>
-        <div class="cont">
-            <div>
-                <div id="counter1" class="counter"><strong>+ 20</strong></div>
-                <p><strong>Cursos Ministrados</strong></p>
+        <main>
+            <h1 style="text-align: center;"><span style="color: brown;">NOSSOS</span> <span
+                    style="color: darkgoldenrod;">NÚMEROS</span></h1><br><br><br>
+            <div class="cont">
+                <div>
+                    <div id="counter1" class="counter"><strong>+ 20</strong></div>
+                    <p><strong>Cursos Ministrados</strong></p>
+                </div>
+                <div>
+                    <div id="counter2" class="counter"><strong>+ 5000</strong> </div>
+                    <p><strong>Alunos Certificados</strong></p>
+                    <p></p>
+                </div>
+                <div>
+                    <div id="counter4" class="counter"><strong>+ 7400</strong></div>
+                    <p><strong>Usuários Ativos</strong></p>
+                    <p></p>
+                </div>
+                <div>
+                    <div id="counter3" class="counter"><strong>+ 20</strong></div>
+                    <p><strong>Municípios Abrangidos</strong></p>
+                    <p></p>
+                </div>
+                <p style="text-align: center;"><br></p>
+                <p style="text-align: center;"><img src="Logocount.png" alt="" width="100" height="100"
+                        role="presentation" class="img-fluid atto_image_button_text-bottom"><br></p>
             </div>
-            <div>
-                <div id="counter2" class="counter"><strong>+ 5000</strong> </div>
-                <p><strong>Alunos Certificados</strong></p>
-                <p></p>
-            </div>
-            <div>
-                <div id="counter4" class="counter"><strong>+ 7400</strong></div>
-                <p><strong>Usuários Ativos</strong></p>
-                <p></p>
-            </div>
-            <div>
-                <div id="counter3" class="counter"><strong>+ 20</strong></div>
-                <p><strong>Municípios Abrangidos</strong></p>
-                <p></p>
-            </div>
-            <p style="text-align: center;"><br></p>
-            <p style="text-align: center;"><img src="Logocount.png" alt="" width="100" height="100" role="presentation" class="img-fluid atto_image_button_text-bottom"><br></p>              
-        </div>
-       
-    </main><br><br><br>
-    <h2 style="text-align: center"><span style="color: rgba(84,79,197)">Total de Alunos inscritos</span> X <span style="color: rgba(54, 162, 235);">Alunos certificados por Cursos</span></h2><br><br>
-<canvas id="alunosChart"></canvas>
-<!-- <h2 style="text-align: center;">Mapa de Inscritos por Estado</h2>
+
+        </main><br><br><br>
+        <h2 style="text-align: center"><span style="color: rgba(84,79,197)">Total de Alunos inscritos</span> X <span
+                style="color: rgba(54, 162, 235);">Alunos certificados por Cursos</span></h2><br><br>
+        <canvas id="alunosChart"></canvas>
+        <!-- <h2 style="text-align: center;">Mapa de Inscritos por Estado</h2>
 <div id="map"></div> -->
-<div id="mapa"></div><br>
+        <div id="mapa"></div><br>
 
         <h2>Estatística em Números</h2><br>
         <p style="color: black;">Disponibiliza dados e informações relativas as capacitações já realizadas pela
@@ -107,18 +132,24 @@
             necessidades dos gestores.</p><br>
         <a href="https://cursosonline.nep.cisbaf.com/mod/page/view.php?id=537"><button
                 style="color: #fff; background-color: rgb(17, 136, 204); width: 200px; height: 45px; font-size: 20px; border: none; cursor: pointer;">Nossos
-                números ▶</button></a>
-        
-    <button id="backToTop" class="back-to-top">↑</button>
+                números ▶</button></a> <br><br>
+        <a href="dashRelBi.html"><button
+                style="color: #fff; background-color: rgb(17, 136, 204); width: 200px; height: 45px; font-size: 20px; border: none; cursor: pointer;">Nossos
+                relatórios <span ><img src="https://images.seeklogo.com/logo-png/43/2/power-bi-icon-logo-png_seeklogo-439962.png" alt="" style="width: 30px;"></span></button></a>
+
+        <button id="backToTop" class="back-to-top">↑</button>
 </body>
 <script src="about.js"></script>
 <footer>
     <a href="index.html"><img id="imgfoot" src="BANNER_SITE_NOVA_LOGO.png" alt=""></a>
-<div class="icons">
-    <a href="https://www.instagram.com/cisbaf?igsh=YjZ4YjBlNGhhdW9z" target="_blank"><img src="instagram.png"  alt=""></a>
-    <a href="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0" target="_blank"><img src="whatsapp.png" alt=""></a>
-</div>
-<p><b>Cisbaf - Nep © 2025 - Todos os direitos reservados</b></p>
+    <div class="icons">
+        <a href="https://www.instagram.com/cisbaf?igsh=YjZ4YjBlNGhhdW9z" target="_blank"><img src="instagram.png"
+                alt=""></a>
+        <a href="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0"
+            target="_blank"><img src="whatsapp.png" alt=""></a>
+    </div>
+    <p><b>Cisbaf - Nep © 2025 - Todos os direitos reservados</b></p>
 
 </footer>
+
 </html>
