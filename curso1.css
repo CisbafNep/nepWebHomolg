@@ -242,7 +242,7 @@ display: block;
   font-size: 20px;
   padding-bottom: 15px;
 }
-.accordion-body p {
+.accordion-body, p {
   margin: 10px 0;
   font-weight: lighter;
   font-family: 'Times New Roman', Times, serif;
